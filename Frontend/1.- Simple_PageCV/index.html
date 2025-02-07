@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Single Page CV of SirProg - Kevin Maldonado, a Software Engineer." />
+    <meta name="keywords" content="FullStack Developer, FrontEnd, HTML, CSS, JavaScript, Web Development" />
+    <meta name="author" content="SirProg - Kevin Maldonado" />
+
+    <meta property="og:title" content="CV fullstack" />
+    <meta property="og:description" content="CV fullstack de kevin maldonado - SirProg GitHub" />
+    <meta property="og:type" content="website" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+        *{
+            font-family: "Varela Round", serif;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        section{
+            padding: 10px 10px;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            font-weight: 500;
+        }
+
+        p, b{
+            font-size:90%;
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        @media (width <= 48rem) {
+            main{
+                grid-template-columns: none;
+            }
+        }
+
+        @media (48rem <= width <= 80rem ) {
+            main{
+                grid-template-columns: repeat(2,minmax(0,1fr));
+            }
+        }
+
+        .information-personal{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-title{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .title{
+            font-weight: 800;
+        }
+
+        .resaltar{
+            color: rgb(160, 54, 221);
+        }
+
+        .info-container{
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .description{
+            padding: 0 40px;
+        }
+
+        footer{
+            padding: 10px;
+            text-align: center;
+            font-weight: 800;
+        }
+    </style>
+    <title>CV SirProg</title>
+</head>
+<body>
+    <header>
+        <div class="information-personal">
+            <h3><b>Kevin Maldonado Paredes</b></h3>
+            <h4>C.I.: 0932488380</h4>
+        </div>
+        <!-- <div class="img-container">
+            <img src="" alt="Kevin Maldonado">
+        </div> -->
+    </header>
+    <main>
+        <section class="education">
+            <div class="container-title">
+                <h3 class="title resaltar">Edu</h3>
+                <h3 class="title">cación</h3>
+            </div>
+            <div class="education-info">
+                <b>ESCUELA SUPERIOR POLITÉCNICA DEL LITORAL (ESPOL)</b>
+                <p>Estudiante de ingeniería en computación</p>
+                <p>Oct 2023 - Guayaquil, EC</p>
+            </div>
+        </section>
+        
+        <section class="aboutme">
+            <div class="container-title">
+                <h3 class="title resaltar">Sob</h3>
+                <h3 class="title">re mi</h3>
+            </div>
+            <p>Estudiante de ingeniería en computación con interes en el desarrollo FullStack y de aplicaciones móviles.</p>
+            <p>Destaco en el trabajo en equipo y desarrollando ideas para el mejoramiento necesario, haciendo uso de las herramientas proporcionadas.</p>
+            <p>Anhelo participar en proyectos que involucren el desarrollo móvil o FullStack y mostrar mis capacidades para hacer la diferencia.</p>
+        </section>
+
+        <section class="information">
+            <div class="container-title">
+                <h3 class="title resaltar">Inf</h3>
+                <h3 class="title">ormación</h3>
+            </div>
+            <address>
+                <div class="info-container">
+                    <p>Correo: </p>
+                    <p>kfmaldon@espol.edu.ec</p>
+                </div>
+                <div class="info-container">
+                    <p>Correo: </p>
+                    <p>kevimaldonadoparedes@gmail.com</p>
+                </div>
+                <div class="info-container">
+                    <p>Telefóno: </p>
+                    <p>(+593) 0962553700</p>
+                </div>
+                <div class="info-container">
+                    <p>Localidad: </p>
+                    <p>Guayaquil, Ecuador</p>
+                </div>
+            </address>
+        </section>
+
+        <section class="projects">
+            <div class="container-title">
+                <h3 class="title resaltar">Pro</h3>
+                <h3 class="title">yectos</h3>
+            </div>
+            <div class="first project">
+                <b>ORGANIZACIÓN DE INVENTARIO PARA DISTRIBUIDORA DE ZAPATOS DON ABRAHAM</b>
+                <p>Proyecto Académico</p>
+                <ul class="description">
+                    <li>
+                        <p>
+                            Creación de una base de datos con MySQL para la gestión de inventario, implementando una interfaz
+                            con CRUD, desarrollando el Frontend y Backend.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="second project">
+                <b>APP DE CONTACTOS</b>
+                <p>Proyecto Académico</p>
+                <ul class="description">
+                    <li>
+                        <p>
+                            Desarrollado en Android Studio con java, se centra el realizar una aplicación similar a una app de contactos,
+                            haciendo uso de conceptos de estructura de datos.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="third project">
+                <b>COMPRESIÓN Y DESCOMPRESIÓN DE IMAGENES CON ALGORITMO DE HUFFMAN</b>
+                <p>Proyecto Académico</p>
+                <ul class="description">
+                    <li>
+                        <p>
+                            Desarrollado con python y haciendo uso de librerias para la manipulación de imagenes, creando una interfaz con flask
+                            y haciendo uso de conceptos de árboles binarios. Se desarrollo un algoritmo para la compresión y descompresión de imagenes, 
+                            sin perdida de datos.
+                        </p>
+                    </li>
+                </ul>
+            </div>    
+        </section>
+
+        <section class="habilities-container">
+            <div class="container-title">
+                <h3 class="title resaltar">Hab</h3>
+                <h3 class="title">ilidades</h3>
+            </div>
+            <div class="habilities">
+                <div class="tools">
+                    <b>HERRAMIENTAS</b>
+                    <ul class="description">
+                        <li><p>Java (Intermedio, POO, estructura de datos)</p></li>
+                        <li><p>Python (Intermedio)</p></li>
+                        <li><p>JavaScript (Intermedio)</p></li>
+                        <li><p>HTML (Intermedio)</p></li>
+                        <li><p>CSS (Intermedio)</p></li>
+                        <li><p>PHP (Básico)</p></li>
+                        <li><p>MySQL (Intermedio)</p></li>
+                        <li><p>React (Intermedio)</p></li>
+                        <li><p>Tailwindcss (Intermedio)</p></li>
+                    </ul>
+                </div>
+                <div class="General">
+                    <b>GENERAL</b>
+                    <ul class="description">
+                        <li><p>Microsoft Office (Power Point y Word intermedio)</p></li>
+                        <li><p>Adobe (Photoshop básico y Acrobat intermedio)</p></li>
+                    </ul>
+                </div>
+                <div class="personal">
+                    <b>PERSONAL</b>
+                    <ul class="description">
+                        <li><p>Detallista e ideador</p></li>
+                        <li><p>Trabajo en equipo</p></li>
+                        <li><p>Explorar más allá</p></li>
+                        <li><p>Aprendizaje rápido</p></li>
+                        <li><p>Capaz de liderazgo</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="voluntiers">
+            <div class="container-title">
+                <h3 class="title resaltar">Vol</h3>
+                <h3 class="title">untariado</h3>
+            </div>
+            <div class="first voluntier">
+                <b>FERIA DE ELECTRÓNICA (GUAYAQUIL, ESPOL)</b>
+                <p>STAFF</p>
+                <p>Enero 20 del 2025, Guayaquil, Ecuador</p>
+                <ul class="description">
+                    <li>
+                        <p>Encargado en gestionar el orden y cumplimiento de los requerimientos a los expositores de la feria</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="Lenguajes">
+            <div class="container-title">
+                <h3 class="title resaltar">Len</h3>
+                <h3 class="title">guajes</h3>
+            </div>
+            <ul class="description">
+                <li>Nativo Español</li>
+                <li>Ingles intermedio</li>
+                <li>Japones Básico</li>
+            </ul>
+        </section>
+
+        <section class="references">
+            <div class="container-title">
+                <h3 class="title resaltar">Ref</h3>
+                <h3 class="title">erencias Personales</h3>
+            </div>
+            <div class="first">
+                <p>XAVIER PAREDES</p>
+                <ul class="description">
+                    <li><p>Ingeniero en Telecomunicaciones</p></li>
+                    <li><p>Telefóno: </p></li>
+                    <li><p>Correo: </p></li>
+                </ul>
+            </div>
+            <!-- <div class="second">
+                <p>Persona</p>
+                <ul>
+                    <li><p>Tabajo</p></li>
+                    <li><p>Telefóno: </p></li>
+                    <li><p>Correo: </p></li>
+                </ul>
+            </div> -->
+        </section>
+
+        <!-- <section class="honors">
+            <div class="container-title">
+                <h3 class="title resaltar">Hon</h3>
+                <h3 class="title">ores</h3>
+            </div>
+
+        </section> -->
+    </main>
+    <footer>
+        <h3><b>&copy Kevin Maldonado Paredes</b></h3>
+    </footer>
+</body>
+</html>
